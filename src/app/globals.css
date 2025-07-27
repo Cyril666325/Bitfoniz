@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+@import "tailwindcss";
+
+:root {
+  --background: #111111;
+  --foreground: #fff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-primary: "Poppins," sans-serif;
+  --font-archivo: "Archivo", sans-serif;
+  --font-sg: "Space Grotesk", sans-serif;
+  --font-geist: "Geist", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+  }
+}
+
+.padding-x {
+  @apply lg:px-[4rem] md:px-[1.8rem] px-[3px];
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+textarea,
+select {
+  font-size: 16px !important;
+}
+
+
+/* Hide default cursor on desktop */
+/* @media (min-width: 768px) {
+  * {
+    cursor: none !important;
+  }
+} */
+
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.inner-shadow {
+  box-shadow: inset 0 1px 3px #303033;
+}
