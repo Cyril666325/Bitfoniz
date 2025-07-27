@@ -1,5 +1,8 @@
 "use client";
 
+// Force dynamic rendering to prevent build-time issues
+export const dynamic = 'force-dynamic';
+
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Send, Bot, User, MessageSquare, AlertCircle } from "lucide-react";

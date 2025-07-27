@@ -1,5 +1,8 @@
 "use client";
 
+// Force dynamic rendering to prevent build-time issues
+export const dynamic = 'force-dynamic';
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ArrowDownUp, ArrowLeft } from "lucide-react";
